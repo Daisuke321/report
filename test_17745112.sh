@@ -35,9 +35,10 @@ diff $tmp-three $tmp-ans4 && echo "TEST4 FINE"
 # TEST5
 echo please input natural two numbers > $tmp-ans5
 ./17745112 100 50 > $tmp-finish || ERROR_EXIT "TEST5-1"
-diff $tmp-finish $tmp-ans5 || ERROR_EXIT "TEST5-1"
+diff $tmp-finish $tmp-ans5 || ERROR_EXIT "TEST5-2"
 diff $tmp-finish $tmp-ans5 && echo "TEST5 FINE"
 
-echo "IT'S DONE"
+echo "IT IS DONE"
 rm -f $tmp-*
 exit 0
+
