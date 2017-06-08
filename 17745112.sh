@@ -2,7 +2,6 @@
 
 
 echo "hi,input two natural numbers"
-echo "like this: 135 25"
 
 num1=$1
 num2=$2

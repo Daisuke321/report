@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 tmp=/tmp/$$
 
@@ -9,19 +9,19 @@ ERROR_EXIT(){
 }
 
 # TEST1
-echo "hi,input two natural numbers" > $tmp-ans1
-./17745112.sh 100 > $tmp-ten || ERROR_EXIT "TEST1-1"
+echo "bad request" > $tmp-ans1
+./17745112.sh 10 > $tmp-ten || ERROR_EXIT "TEST1-1"
 diff $tmp-ans1 $tmp-ten || ERROR_EXIT "TEST1-2"
 diff $tmp-ans1 $tmp-ten && echo "TEST1 FINE"
 
 # TEST2
-echo "hi,input two natural numbers" > $tmp-ans2
+echo "not natural numbers" > $tmp-ans2
 ./17745112.sh 3.5 3 > $tmp-point && ERROR_EXIT "TEST2-1"
 diff $tmp-point $tmp-ans2 || ERROR_EXIT "TEST2-2"
 diff $tmp-point $tmp-ans2 && echo "TEST2 FINE"
 
 # TEST3
-echo "hi input two natural numbers" > $tmp-ans3
+echo "not natural numbers" > $tmp-ans3
 ./17745112.sh 0 0.5 > $tmp-zero && ERROR_EXIT "TEST3-1"
 diff $tmp-zero $tmp-ans3 || ERROR_EXIT "TEST3-2"
 diff $tmp-zero $tmp-ans3 && echo "TEST3 FINE"
@@ -38,7 +38,7 @@ echo "hi,input natural two numbers" > $tmp-ans5
 diff $tmp-finish $tmp-ans5 || ERROR_EXIT "TEST5-2"
 diff $tmp-finish $tmp-ans5 && echo "TEST5 FINE"
 
-echo "like this: 135 25"
+echo "the GCD is :"
 rm -f $tmp-*
 exit 0
 
