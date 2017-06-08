@@ -1,4 +1,4 @@
-#!/bin/bash 　
+#!/bin/bash
 
 
 echo "hi,input two natural numbers"
