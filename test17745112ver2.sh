@@ -11,9 +11,9 @@ ERROR_EXIT(){
 #message list
 echo "bad request" > $tmp-ans1
 echo "bad request" > $tmp-ans2
-echo "not natural numbers" > $tmp-ans3
-echo "not natural numbers" > $tmp-ans4
-echo "hi,input two natural numbers" > $tmp-ans5
+echo "bad request" > $tmp-ans3
+echo "bad request" > $tmp-ans4
+echo "bad request" > $tmp-ans5
 
 
 # TEST1
