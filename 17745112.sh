@@ -14,7 +14,7 @@ then
 elif [ $1 -le 0 ]||[ $2 -le 0 ]
 then
     echo "not natural numbers"
-    exit 0
+    exit 1
 fi
 
 while [ `expr $1 % $2` -ne 0 ]
