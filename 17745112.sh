@@ -9,8 +9,8 @@ num2=$2
 expr $1 + $2 > /dev/null 2>&1 
 if [ $? -ge 2 ] 
 then
-    echo "bad request"
-    exit 0
+    echo "bad request" 1>&2
+    exit 1
 elif [ $1 -le 0 ]||[ $2 -le 0 ]
 then
     echo "not natural numbers"
