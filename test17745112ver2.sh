@@ -21,15 +21,15 @@ echo "hi,input natural two numbers" > $tmp-ans5
 diff $tmp-ans1 $tmp-ten || ERROR_EXIT "TEST1-2"
 
 # TEST2
-./17745112.sh 3.5 3 > $tmp-point && ERROR_EXIT "TEST2-1"
+./17745112.sh 3.5 3 2> $tmp-point && ERROR_EXIT "TEST2-1"
 diff $tmp-point $tmp-ans2 || ERROR_EXIT "TEST2-2"
 
 # TEST3
-./17745112.sh 0 0.5 > $tmp-zero && ERROR_EXIT "TEST3-1"
+./17745112.sh 0 0.5 2> $tmp-zero && ERROR_EXIT "TEST3-1"
 diff $tmp-zero $tmp-ans3 || ERROR_EXIT "TEST3-2"
 
 # TEST4
-./17745112.sh 10 15 50 > $tmp-three && ERROR_EXIT "TEST4-1"
+./17745112.sh 10 15 50 2> $tmp-three && ERROR_EXIT "TEST4-1"
 diff $tmp-three $tmp-ans4 || ERROR_EXIT "TEST4-2"
 
 # TEST5
