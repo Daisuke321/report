@@ -5,4 +5,4 @@ script:
 
 
 
-  - bash -e test17745112ver2.sh
+  - bash -e test17745112.sh
