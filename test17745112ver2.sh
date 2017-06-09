@@ -13,7 +13,7 @@ echo "bad request" > $tmp-ans1
 echo "bad request" > $tmp-ans2
 echo "bad request" > $tmp-ans3
 echo "bad request" > $tmp-ans4
-echo "bad request" > $tmp-ans5
+echo "hi, input natural two numbers" > $tmp-ans5
 
 
 # TEST1
@@ -37,7 +37,7 @@ diff $tmp-wpoint $tmp-ans4 || ERROR_EXIT "TEST4-2"
 diff $tmp-wpoint $tmp-ans4 && echo "TEST4 FINE"
 
 # TEST5
-./17745112.sh 100 50 2> $tmp-finish && ERROR_EXIT "TEST5-1"
+./17745112.sh 100 50 1> $tmp-finish && ERROR_EXIT "TEST5-1"
 diff $tmp-finish $tmp-ans5 || ERROR_EXIT "TEST5-2"
 diff $tmp-finish $tmp-ans5 && echo "TEST5 FINE"
 
