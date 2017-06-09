@@ -22,7 +22,7 @@ diff $tmp-ans1 $tmp-ten || ERROR_EXIT "TEST1-2"
 diff $tmp-ans1 $tmp-ten && echo "TEST1 FINE"
 
 # TEST2
-./17745112.sh 3.5 3 2> $tmp-point && ERROR_EXIT "TEST2-1"
+./17745112.sh 3.5 3 1> $tmp-point && ERROR_EXIT "TEST2-1"
 diff $tmp-point $tmp-ans2 || ERROR_EXIT "TEST2-2"
 diff $tmp-point $tmp-ans2 && echo "TEST2 FINE"
 
@@ -32,7 +32,7 @@ diff $tmp-zero $tmp-ans3 || ERROR_EXIT "TEST3-2"
 diff $tmp-zero $tmp-ans3 && echo "TEST3 FINE"
 
 # TEST4
-./17745112.sh 10 15 2> $tmp-three && ERROR_EXIT "TEST4-1"
+./17745112.sh 10 15 50 2> $tmp-three && ERROR_EXIT "TEST4-1"
 diff $tmp-three $tmp-ans4 || ERROR_EXIT "TEST4-2"
 diff $tmp-three $tmp-ans4 && echo "TEST4 FINE"
 
