@@ -12,6 +12,7 @@ ERROR_EXIT(){
 echo "hi,input two natural numbers" > $tmp-ans1
 echo "bad request" > $tmp-ans1
 echo "bad request" > $tmp-ans2
+echo "not natural numbers > $tmp-ans2
 echo "not natural numbers" > $tmp-ans3
 echo "bad request" > $tmp-ans4
 echo "hi,input natural two numbers" > $tmp-ans5
@@ -37,7 +38,7 @@ diff $tmp-three $tmp-ans4 || ERROR_EXIT "TEST4-2"
 diff $tmp-three $tmp-ans4 && echo "TEST4 FINE"
 
 # TEST5
-./17745112 100 50 > $tmp-finish || ERROR_EXIT "TEST5-1"
+./17745112.sh 100 50 > $tmp-finish || ERROR_EXIT "TEST5-1"
 diff $tmp-finish $tmp-ans5 || ERROR_EXIT "TEST5-2"
 diff $tmp-finish $tmp-ans5 && echo "TEST5 FINE"
 
