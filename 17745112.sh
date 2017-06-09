@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-echo "hi,input two natural numbers"
 
 num1=$1
 num2=$2
