@@ -9,11 +9,11 @@ expr $1 + $2 > /dev/null 2>&1
 if [ $? -ge 2 ] 
 then
     echo "bad request" 1>&2
-    exit 1
+    exit 2
 elif [ $1 -le 0 ]||[ $2 -le 0 ]
 then
     echo "not natural numbers"
-    exit 1
+    exit 3
 fi
 
 while [ `expr $1 % $2` -ne 0 ]
