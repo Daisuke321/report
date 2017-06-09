@@ -32,7 +32,7 @@ diff $tmp-zero $tmp-ans3 || ERROR_EXIT "TEST3-2"
 diff $tmp-zero $tmp-ans3 && echo "TEST3 FINE"
 
 # TEST4
-./17745112.sh 10 15 50 2> $tmp-three && ERROR_EXIT "TEST4-1"
+./17745112.sh 0.7 0.2 2> $tmp-wpoint && ERROR_EXIT "TEST4-1"
 diff $tmp-three $tmp-ans4 || ERROR_EXIT "TEST4-2"
 diff $tmp-three $tmp-ans4 && echo "TEST4 FINE"
 
