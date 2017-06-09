@@ -18,9 +18,8 @@ echo "hi,input natural two numbers" > $tmp-ans5
 
 
 # TEST1
-./17745112.sh 10 > $tmp-ten || ERROR_EXIT "TEST1-1"
+./17745112.sh 10 2> $tmp-ten && ERROR_EXIT "TEST1-1"
 diff $tmp-ans1 $tmp-ten || ERROR_EXIT "TEST1-2"
-diff $tmp-ans1 $tmp-ten && echo "TEST1 FINE"
 
 # TEST2
 ./17745112.sh 3.5 3 > $tmp-point && ERROR_EXIT "TEST2-1"
