@@ -38,7 +38,8 @@ diff $tmp-wpoint $tmp-ans4 && echo "TEST4 FINE"
 
 # TEST5
 ./17745112.sh 100 50 1> $tmp-finish || ERROR_EXIT "TEST5-1"
-
+diff $tmp-finish $tmp-ans5 && ERROR_EXIT "TEST5-2"
+diff $tmp-finish $tmp-ans5 && echo "TEST5 FINE"
 
 echo "ok"
 rm -f $tmp-*
