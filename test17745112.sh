@@ -14,7 +14,7 @@ echo "bad request" > $tmp-ans2
 echo "bad request" > $tmp-ans3
 echo "bad request" > $tmp-ans4
 echo "hi,input two natural numbers" > $tmp-ans5
-echo "the GCD is : 50" >> $tmp-ans5
+echo "the GCD is :50" >> $tmp-ans5
 
 
 
