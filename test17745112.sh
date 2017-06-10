@@ -43,5 +43,5 @@ diff $tmp-finish $tmp-ans5 && echo "TEST5 FINE"
 
 echo "ok"
 rm -f $tmp-*
-exit 1
+exit 0
 
