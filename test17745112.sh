@@ -14,6 +14,8 @@ echo "bad request" > $tmp-ans2
 echo "bad request" > $tmp-ans3
 echo "bad request" > $tmp-ans4
 echo "hi,input two natural numbers" > $tmp-ans5
+echo "the GCD is :50" >> $tmp-ans5
+
 
 
 # TEST1
@@ -38,6 +40,7 @@ diff $tmp-wpoint $tmp-ans4 && echo "TEST4 FINE"
 
 # TEST5
 ./17745112.sh 100 50 1> $tmp-finish || ERROR_EXIT "TEST5-1"
+diff $tmp-final $tmp-ans5 || ERROR_EXIT "TEST5-2"
 diff $tmp-finish $tmp-ans5 && echo "TEST5 FINE"
 
 echo "ok"
